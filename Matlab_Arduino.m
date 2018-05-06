@@ -11,8 +11,8 @@ clc;
 y=zeros(1,1000); %Vector donde se guardarán los datos
 
 %Inicializo el puerto serial que utilizaré
-delete(instrfind({'Port'},{'COM6'}));
-puerto_serial=serial('COM6');
+delete(instrfind({'Port'},{'COM3'}));
+puerto_serial=serial('COM3');
 puerto_serial.BaudRate=9600;
 warning('off','MATLAB:serial:fscanf:unsuccessfulRead');
 
